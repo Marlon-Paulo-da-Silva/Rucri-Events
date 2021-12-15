@@ -24,3 +24,7 @@ Route::get('/contact', function () {
     return view('products');
 });
 
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
