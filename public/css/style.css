@@ -169,7 +169,15 @@ header {
     font-size: 14px;
     display: flex;
     padding: 10px 0;
+}
 
+#item-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#item-list li{
+    display: flex;
 }
 
 #info-container h3,
