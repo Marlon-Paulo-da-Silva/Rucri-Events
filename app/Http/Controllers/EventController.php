@@ -87,8 +87,8 @@ class EventController extends Controller
 
     public function edit($id) {
         $event = Event::findOrFail($id);
-        //alterar depois, só para om
-        return view('events.dashboard', ['event' => $event]);
+        
+        return view('events.edit', ['event' => $event]);
     }
 
 }
